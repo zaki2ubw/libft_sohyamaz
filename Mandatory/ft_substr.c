@@ -6,7 +6,7 @@
 /*   By: sohyamaz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 13:52:13 by sohyamaz          #+#    #+#             */
-/*   Updated: 2024/11/16 17:27:11 by sohyamaz         ###   ########.fr       */
+/*   Updated: 2025/06/08 11:48:39 by sohyamaz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,14 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*dest;
-	unsigned int	i;
 	size_t			slen;
 
-	i = 0;
 	if (s == NULL)
 	{
 		return (NULL);
 	}
 	slen = ft_strlen(s);
-	if (start > slen || len < 0)
+	if (start > slen)
 	{
 		return (ft_strdup(""));
 	}
